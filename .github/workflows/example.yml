@@ -1,0 +1,13 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  update-gha-vars:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: lexops/update-gha-vars@main
+        with:
+          config-yaml: |
+            FOO: bar
+            BAZ: qux
+          github-token: ${{ secrets.GITHUB_TOKEN }} 

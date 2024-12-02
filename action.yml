@@ -1,0 +1,11 @@
+name: 'Update GitHub Actions Variables'
+description: 'Create or update GitHub Actions variables'
+
+inputs:
+  config-yaml:
+    description: 'YAML file containing GitHub Actions variables'
+    required: true
+
+runs:
+  using: 'node20'
+  main: 'index.js'
