@@ -1,7 +1,9 @@
 name: Update GitHub Actions Variables
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
   update-gha-vars:
